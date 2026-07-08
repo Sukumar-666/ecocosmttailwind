@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Shopping Cart - SkSync</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+<header class="bg-gradient-to-r from-pink-500 to-rose-400 text-white text-center py-10 px-4">
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-wide">SkSync</h1>
+<p class="mt-2 text-lg italic text-pink-100">Your Beauty, Our Passion</p>
+</header>
+
+
+<nav class="bg-white shadow-md sticky top-0 z-10">
+<div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-gray-700">
+<a href="index.html" class="hover:text-pink-600">Home</a>
+<a href="products.html" class="hover:text-pink-600">Products</a>
+<a href="categories.html" class="hover:text-pink-600">Categories</a>
+<a href="brands.html" class="hover:text-pink-600">Brands</a>
+<a href="offers.html" class="hover:text-pink-600">Offers</a>
+<a href="gallery.html" class="hover:text-pink-600">Gallery</a>
+<a href="testimonials.html" class="hover:text-pink-600">Testimonials</a>
+<a href="about.html" class="hover:text-pink-600">About</a>
+<a href="contact.html" class="hover:text-pink-600">Contact</a>
+<a href="faq.html" class="hover:text-pink-600">FAQ</a>
+<a href="cart.html" class="hover:text-pink-600">Cart</a>
+<a href="profile.html" class="hover:text-pink-600">Profile</a>
+<a href="login.html" class="hover:text-pink-600">Login</a>
+<a href="signup.html" class="bg-pink-600 text-white px-4 py-1.5 rounded-full hover:bg-pink-700">Sign Up</a>
+</div>
+</nav>
+
+<div class="max-w-6xl mx-auto px-4 py-8">
+
+<h2 class="text-3xl font-bold text-pink-700 mb-4">Your Shopping Cart</h2>
+<p class="text-gray-700 leading-relaxed mb-3">Review the items in your cart before proceeding to checkout.</p>
+
+<table class="w-full border border-pink-200 rounded-lg overflow-hidden mb-6 text-left">
+<tr><th class="bg-pink-100 text-pink-800 px-4 py-3 border-b border-pink-200 font-semibold">Product</th><th class="bg-pink-100 text-pink-800 px-4 py-3 border-b border-pink-200 font-semibold">Price</th><th class="bg-pink-100 text-pink-800 px-4 py-3 border-b border-pink-200 font-semibold">Quantity</th><th class="bg-pink-100 text-pink-800 px-4 py-3 border-b border-pink-200 font-semibold">Subtotal</th><th class="bg-pink-100 text-pink-800 px-4 py-3 border-b border-pink-200 font-semibold">Remove</th></tr>
+<tr><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Matte Lipstick</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 499</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700"><input type="text" value="1" class="border border-gray-300 rounded-lg px-2 py-1 w-14 text-center"></td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 499</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700"><a href="cart.html" class="text-red-500 hover:underline">Remove</a></td></tr>
+<tr><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Hydrating Face Serum</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 899</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700"><input type="text" value="1" class="border border-gray-300 rounded-lg px-2 py-1 w-14 text-center"></td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 899</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700"><a href="cart.html" class="text-red-500 hover:underline">Remove</a></td></tr>
+<tr><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Kajal Pencil</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 199</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700"><input type="text" value="2" class="border border-gray-300 rounded-lg px-2 py-1 w-14 text-center"></td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 398</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700"><a href="cart.html" class="text-red-500 hover:underline">Remove</a></td></tr>
+</table>
+
+<h3 class="text-2xl font-semibold text-pink-600 mt-8 mb-3">Order Summary</h3>
+<table class="w-full max-w-sm border border-pink-200 rounded-lg overflow-hidden mb-6">
+<tr><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Subtotal</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 1796</td></tr>
+<tr><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Shipping</td><td class="px-4 py-3 border-b border-pink-100 text-gray-700">Rs. 50</td></tr>
+<tr><td class="px-4 py-3 font-bold text-gray-800">Total</td><td class="px-4 py-3 font-bold text-pink-600">Rs. 1846</td></tr>
+</table>
+
+<form action="#" method="get" class="flex gap-2 mb-6 max-w-md">
+<input type="text" name="coupon" placeholder="Enter coupon code" class="border border-gray-300 rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-pink-400">
+<input type="submit" value="Apply Coupon" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-2 rounded-lg cursor-pointer">
+</form>
+
+<p class="text-gray-700 leading-relaxed mb-3"><a href="checkout.html" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-2 rounded-lg">Proceed to Checkout</a>
+<a href="products.html" class="text-pink-600 hover:underline ml-4">Continue Shopping</a></p>
+
+</div>
+
+<footer class="bg-gray-900 text-gray-300 mt-12">
+<div class="max-w-6xl mx-auto px-4 py-8">
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-4">
+<a href="about.html" class="hover:text-pink-400">About Us</a>
+<a href="contact.html" class="hover:text-pink-400">Contact Us</a>
+<a href="faq.html" class="hover:text-pink-400">FAQ</a>
+<a href="privacy-policy.html" class="hover:text-pink-400">Privacy Policy</a>
+<a href="terms-and-conditions.html" class="hover:text-pink-400">Terms &amp; Conditions</a>
+<a href="shipping-policy.html" class="hover:text-pink-400">Shipping Policy</a>
+<a href="return-policy.html" class="hover:text-pink-400">Return Policy</a>
+<a href="enquiry-form.html" class="hover:text-pink-400">Enquiry Form</a>
+<a href="application-form.html" class="hover:text-pink-400">Careers</a>
+</div>
+<p class="text-center text-sm">Follow us:
+<a href="#" class="hover:text-pink-400">Instagram</a> |
+<a href="#" class="hover:text-pink-400">Facebook</a> |
+<a href="#" class="hover:text-pink-400">YouTube</a>
+</p>
+<p class="text-center text-xs text-gray-500 mt-4">&copy; 2026 SkSync Cosmetics. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
